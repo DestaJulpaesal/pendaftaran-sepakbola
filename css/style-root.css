@@ -1,0 +1,593 @@
+
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Quicksand', sans-serif;
+	color: #000000;
+}
+header {
+	height:70px;
+}
+header h1 {
+	display: inline-block;
+	
+	padding:20px 30px;
+	text-transform: uppercase;
+}
+header h1 a {
+	transition: .3s;
+}
+header h1 a:hover {
+	color: #F84744;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	padding:24px;
+	display: inline-block;
+}
+header ul li a {
+	transition: .3s;
+}
+header ul li a:hover {
+	color: #F84744;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width:90%;
+	margin:0 auto;
+}
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.mobile-menu {
+	float: right;
+	display: none;
+	padding:18px;
+}
+.mobile-menu:hover {
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width:300px;
+	background-color: rgba(16, 47, 80, .9);
+	transition: .3s;
+	z-index: 9999;
+}
+.sidebar ul li a {
+	color: #fff;
+}
+.sidebar ul li {
+	padding:24px;
+	transition: .3s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover {
+	background-color: #F84744;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+.banner {
+	background-color: #007bff;
+	padding:100px 0;
+}
+section {
+	padding:50px 0;
+}
+.banner img {
+	width: 100px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px #ddd;
+	margin-bottom: 10px;
+}
+.banner h2,
+.banner p,
+.banner span {
+	color:#000000;
+}
+.banner h2 {
+	margin-bottom: 10px;
+}
+.banner p {
+	font-size: 18px;
+}
+.banner-left {
+	padding-left:24px;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #e70a0a;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #F84744;
+	left: calc(50% - 20px);
+}
+/* CSS yang sama seperti sebelumnya, tambahkan style tombol download di bawah ini */
+
+.btn-download {
+	display: inline-block;
+	padding: 12px 20px;
+	margin-top: 20px;
+	background-color: #ff1100;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .btn-download:hover {
+	background-color: #e65c00;
+  }
+  /* CSS yang sama seperti sebelumnya, tambahkan style untuk tombol WhatsApp di bawah ini */
+
+.btn-whatsapp {
+	display: inline-block;
+	padding: 12px 20px;
+	margin-top: 20px;
+	background-color: #25d366;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .btn-whatsapp:hover {
+	background-color:#000000;
+  }
+  
+
+  
+#about p {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+/* CSS yang sama seperti sebelumnya, tambahkan style untuk teks lebih besar dan warna lebih menarik di bawah ini */
+
+.description {
+	font-size: 18px;
+	line-height: 1.6;
+	color: #333;
+  }
+  
+  .intro-heading {
+	font-size: 36px;
+	color: #0d0e0d;
+	margin-bottom: 20px;
+  }
+  
+  .highlight {
+	color: #ff6600;
+  }
+  
+  .gradient-text {
+	background: linear-gradient(90deg, #db9364, #070707);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+  }
+
+  
+/* CSS yang sama seperti sebelumnya, tambahkan style untuk bagian My Services di bawah ini */
+
+.services-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
+	margin-top: 30px;
+  }
+  
+  .service {
+	background-color: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+  }
+  
+  .service img {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
+  }
+  
+  .service h3 {
+	color: #333;
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .service p {
+	color: #555;
+	line-height: 1.6;
+  }
+  
+  
+
+  
+#skills,
+#contact {
+	background-color: #ffffff;
+}
+#skills .bar {
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	margin: 5px 0 20px 0;
+}
+.bar .nilai {
+	height:30px;
+	background-color: #F84744;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.html {
+	width:85%;
+}
+.css {
+	width:75%;
+}
+.js {
+	width:70%;
+}
+.php {
+	width:55%;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	justify-content: center;
+  }
+  
+  .image {
+	position: relative;
+  }
+  
+  .image img {
+	max-width: 150px;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: transform 0.3s ease;
+  }
+  
+  .image img:hover {
+	transform: scale(1.1);
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  
+  .image:hover .overlay {
+	opacity: 1;
+  }
+  
+  .overlay-text {
+	color: #fff;
+	font-size: 20px;
+  }
+  
+  .lightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .lightbox-img {
+	max-width: 80%;
+	max-height: 80%;
+	object-fit: contain;
+	border-radius: 5px;
+  }
+  
+  .image-description {
+	color: #fff;
+	font-size: 20px;
+	margin-top: 10px;
+  }
+  
+  .nav-btn {
+	position: absolute;
+	top: 50%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+  }
+  
+  .prev-btn {
+	left: 20px;
+  }
+  
+  .next-btn {
+	right: 20px;
+  }
+
+#projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+  }
+  
+  .project {
+	width: 300px;
+	margin: 20px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+	transform: translateY(-5px);
+  }
+  
+  .project .project-img {
+	overflow: hidden;
+	border-radius: 5px;
+  }
+  
+  .project .project-img img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+  }
+  
+  .project:hover .project-img img {
+	transform: scale(1.1);
+  }
+  
+  .project .project-details {
+	padding: 5px 0;
+  }
+  
+  .project h2 {
+	font-size: 24px;
+	margin: 0;
+  }
+  
+  .project p {
+	margin-bottom: 10px;
+  }
+  
+  .project a {
+	display: inline-block;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+  }
+  
+  .project a:hover {
+	background-color: #0056b3;
+  }
+  /* ... Kode CSS Anda sebelumnya ... */
+
+/* Animasi Transisi */
+.project {
+	transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+	transform: translateY(-5px);
+  }
+  
+  .project-img img {
+	transition: transform 0.3s ease;
+  }
+  
+  .project:hover .project-img img {
+	transform: scale(1.1);
+  }
+  
+  /* Animasi Keyframe */
+  @keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .project {
+	animation: fadeIn 0.5s ease-in-out;
+	animation-fill-mode: both;
+	opacity: 0;
+  }
+  
+  /* ... Kode CSS Anda setelahnya ... */
+  
+  #contact {
+	background-color: #f9f9f9;
+	padding: 40px 0;
+  }
+  
+  .contact-container {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+  h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+  }
+  
+  .contact-info {
+	margin-bottom: 20px;
+  }
+  
+  .contact-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .contact-icon {
+	font-size: 18px;
+	margin-right: 10px;
+  }
+  
+  .contact-text {
+	font-size: 16px;
+  }
+  
+  .form-group {
+	margin-bottom: 20px;
+  }
+  
+  label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #0a0a0a;
+  }
+  
+
+footer {
+	background-color:#007bff;
+	padding:5px;
+	text-align: center;
+}
+footer small {
+	color: rgb(31, 30, 30);
+}
+/* CSS yang telah ada sebelumnya */
+
+/* Styling untuk ikon media sosial */
+.social-icons {
+	margin-top: 20px;
+  }
+  
+  .social-icons a {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 24px;
+	color:#007bff;
+	text-decoration: none;
+	transition: color 0.3s ease;
+  }
+  
+  .social-icons a:last-child {
+	margin-right: 0;
+  }
+  
+  .social-icons a:hover {
+	color: #007bff; /* Warna saat mengarahkan kursor ke ikon */
+  }
+  
+html {
+	scroll-behavior: smooth;
+}
+
+@media (max-width: 768px){
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+	.col-4 {
+		width:50%;
+	}
+	.col-3 {
+		width:100%;
+	}
+}
+/* Gaya CSS umum */
+p {
+	font-size: 16px;
+  }
+  
+  /* Gaya CSS untuk layar dengan lebar maksimal 600px (misalnya ponsel) */
+  @media (max-width: 600px) {
+	p {
+	  font-size: 14px;
+	}
+  }
+  
